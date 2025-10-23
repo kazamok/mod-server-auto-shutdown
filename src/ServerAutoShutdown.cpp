@@ -221,7 +221,7 @@ void ServerAutoShutdown::Init()
     // Add task for pre shutdown announce
     scheduler.Schedule(Seconds(diffToPreAnnounce), [this, preAnnounceSeconds](TaskContext /*context*/)
     {
-        std::string preAnnounceMessageFormat = sConfigMgr->GetOption<std::string>("ServerAutoShutdown.PreAnnounce.Message", "[SERVER]: Automated (quick) server restart in {}");
+        std::string preAnnounceMessageFormat = sConfigMgr->GetOption<std::string>("ServerAutoShutdown.PreAnnounce.Message", "[SERVER]: Automated server restart(shutdown) in {}");
         std::string message = Acore::StringFormat(preAnnounceMessageFormat, Acore::Time::ToTimeString<Seconds>(preAnnounceSeconds, TimeOutput::Seconds, TimeFormat::FullText));
 
         LOG_INFO("module", "> {}", message);
