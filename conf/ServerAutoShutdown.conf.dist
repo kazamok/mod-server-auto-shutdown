@@ -13,7 +13,7 @@
 #                     1 - Enabled
 #
 
-ServerAutoShutdown.Enabled = 0
+ServerAutoShutdown.Enabled = 1
 
 #
 #    ServerAutoShutdown.EveryDays
@@ -38,7 +38,7 @@ ServerAutoShutdown.Weekday = -1
 #        Default:     04:00:00
 #
 
-ServerAutoShutdown.Time = "04:00:00"
+ServerAutoShutdown.Time = "19:15:00"
 
 #
 #    ServerAutoShutdown.Action
@@ -62,7 +62,7 @@ ServerAutoShutdown.PreAnnounce.Seconds = 3600
 #        Default:     "[SERVER]: Automated (quick) server restart in {}"
 #
 
-ServerAutoShutdown.PreAnnounce.Message = "[SERVER]: Automated (quick) server restart in {}"
+ServerAutoShutdown.PreAnnounce.Message = "[SERVER]: Automated server restart(shutdown) in {}"
 
 #
 #    ServerAutoShutdown.StartEvents
